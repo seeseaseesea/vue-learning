@@ -1,0 +1,10 @@
+var Vue = require('vue');
+var VueRouter = require('vue-router');
+var App = require('./app.vue');
+Vue.use(VueRouter);
+var router = new VueRouter();
+var vuestrap = require('vue-strap');
+Vue.use(vuestrap);
+require('./router')(router);
+router.start(App,'#app');
+
